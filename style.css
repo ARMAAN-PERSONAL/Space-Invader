@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    background: url('Space1.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+canvas {
+    background-color: black;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#restartBtn {
+    background-color: green;
+}
+
+#restartBtn:hover {
+    background-color: darkgreen;
+}
+
+#pauseBtn {
+    background-color: orange;
+}
+
+#pauseBtn:hover {
+    background-color: darkorange;
+}
+
+#endBtn {
+    background-color: red;
+}
+
+#endBtn:hover {
+    background-color: darkred;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+#gameCanvas {
+    display: block;
+    background-color: black;
+    margin: 0 auto;
+    border: 1px solid white;
+    touch-action: none; /* Prevent default touch interactions */
+}
+
+@media (max-width: 600px) {
+    #gameCanvas {
+        width: 100%;
+        height: auto;
+    }
+}
