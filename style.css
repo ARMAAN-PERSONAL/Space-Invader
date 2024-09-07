@@ -2,87 +2,65 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
-    background: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    background: url('Space1.png') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #000; /* Dark background */
+    color: #00FF00; /* Neon green for text */
+    font-family: 'Courier New', Courier, monospace;
 }
 
 header {
-    margin-bottom: 20px;
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 3em;
+    color: #00FF00; /* Neon green */
+    text-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00, 0 0 40px #00FF00, 0 0 50px #00FF00;
 }
 
 canvas {
-    background-color: black;
-    display: block;
-    margin: 0 auto;
-    border: 1px solid rgb(0, 0, 0);
+    border: 3px solid #00FF00;
+    box-shadow: 0 0 20px #00FF00;
+    background-color: #000; /* Dark background for the game area */
 }
 
 #controls {
-    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
 }
 
 button {
     padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    background-color: #00FF00;
+    color: #000;
     border: none;
     border-radius: 5px;
-    color: white;
-    transition: background-color 0.3s ease;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-shadow: 0 0 5px #000;
+    box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00;
+    transition: transform 0.2s;
 }
 
-#restartBtn {
-    background-color: green;
+button:hover {
+    transform: scale(1.1);
 }
 
-#restartBtn:hover {
-    background-color: darkgreen;
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #00FF00;
+    box-shadow: 0 0 10px #00FF00;
 }
 
-#pauseBtn {
-    background-color: orange;
-}
-
-#pauseBtn:hover {
-    background-color: darkorange;
-}
-
-#endBtn {
-    background-color: red;
-}
-
-#endBtn:hover {
-    background-color: darkred;
-}
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-}
-
-#gameCanvas {
-    display: block;
-    background-color: black;
-    margin: 0 auto;
-    border: 1px solid white;
-    touch-action: none; /* Prevent default touch interactions */
-}
-
-@media (max-width: 600px) {
-    #gameCanvas {
-        width: 100%;
-        height: auto;
-    }
+#scoreboard {
+    color: #00FF00;
+    font-size: 1.2em;
+    margin: 10px 0;
 }
